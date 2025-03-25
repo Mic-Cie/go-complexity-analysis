@@ -5,7 +5,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/fikin/go-complexity-analysis"
+	"github.com/Mic-Cie/go-complexity-analysis"
 )
 
 func TestIt(t *testing.T) {

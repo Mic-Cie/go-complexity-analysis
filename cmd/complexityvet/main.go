@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/fikin/go-complexity-analysis"
+	"github.com/Mic-Cie/go-complexity-analysis"
 	"golang.org/x/tools/go/analysis/singlechecker"
 )
 

@@ -8,7 +8,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/fikin/go-complexity-analysis"
+	"github.com/Mic-Cie/go-complexity-analysis"
 	"gopkg.in/yaml.v3"
 )
 

@@ -44,7 +44,7 @@ linters-settings:
 The cmdline application exits with error code in case there are any diagnostics found.
 
 ```sh
-$ go get github.com/fikin/go-complexity-analysis/cmd/complexity
+$ go get github.com/Mic-Cie/go-complexity-analysis/cmd/complexity
 $ ${GOPATH}/bin/complexity [flags] [directory/file]
 ```
 
@@ -53,7 +53,7 @@ $ ${GOPATH}/bin/complexity [flags] [directory/file]
 In this mode go vet will be calling the analyzer.
 
 ```sh
-$ go get github.com/fikin/go-complexity-analysis/cmd/complexityvet
+$ go get github.com/Mic-Cie/go-complexity-analysis/cmd/complexityvet
 $ go vet -vettool=${GOPATH}/bin/complexityvet [flags] [directory/file]
 ```
 
@@ -62,9 +62,9 @@ $ go vet -vettool=${GOPATH}/bin/complexityvet [flags] [directory/file]
 Note: golangci-lint mandates the plugins must be compiled with *exact* same dependencies, transient included, as golangci-lint version used. It is very impractical to automate the plugin building outside golangci-lint build pipeline.
 
 ```sh
-$ mkdir -p ${GOPATH}/src/fikin
-$ cd ${GOPATH}/src/fikin
-$ git clone github.com/fikin/go-complexity-analysis
+$ mkdir -p ${GOPATH}/src/Mic-Cie
+$ cd ${GOPATH}/src/Mic-Cie
+$ git clone github.com/Mic-Cie/go-complexity-analysis
 $ cd go-complexity-analysis
 $ go build -buildmode=plugin -o plugin_file plugin/main.go
 ```
@@ -77,7 +77,7 @@ linters-settings:
     complexity:
       path: <plugin_file>
       description: Complexity checks cyclomatic complexity and maintainability index
-      original-url: github.com/fikin/complexity
+      original-url: github.com/Mic-Cie/complexity
 ```
 
 # Flags in all modes
@@ -107,7 +107,7 @@ $ go vet -vettool=$(which complexity) --cycloover 5 --maintunder 30 ./src
 
 You can use the Github Actions to execute the complexity command on Github pull requests with [reviewdog](https://github.com/reviewdog/reviewdog).
 
-See [fikin/go-complexity-analysis-action](https://github.com/fikin/go-complexity-analysis-action) for the details.
+See [Mic-Cie/go-complexity-analysis-action](https://github.com/Mic-Cie/go-complexity-analysis-action) for the details.
 
 
 # Metrics
