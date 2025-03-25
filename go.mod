@@ -1,4 +1,4 @@
-module github.com/Mic-Cie/go-complexity-analysis
+module github.com/fikin/go-complexity-analysis
 
 go 1.22
 
